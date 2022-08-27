@@ -1,0 +1,35 @@
+:root{--select-background-color:#fff;--select-inactive-text-color:#626262;--select-hover-text-color:#121212;--select-list-background-color:#fff;--select-box-shadow:rgba(0,0,0,0.1)}
+.dark-theme{--select-background-color:#0e1a25;--select-inactive-text-color:#fff;--select-hover-text-color:#fff;--select-list-background-color:#091016;--select-box-shadow:rgba(255,255,255,0.1)}
+.filter__tag{display:none}
+.select__base{height:56px}
+.select__base .bbva-icon{color:#1973b8;-webkit-transition:-webkit-transform 400ms;transition:-webkit-transform 400ms;transition:transform 400ms;transition:transform 400ms,-webkit-transform 400ms;padding:15px 10px;margin:-15px -5px}
+.select__base .bbva-icon[aria-hidden='true']{outline:0;pointer-events:none}
+.keyboard-focus .select__base>.select__selected:focus{outline:1px solid #fff;outline-offset:-4px}
+.keyboard-focus .select__base>.select__selected:not(.select--active):focus{outline:1px solid #1973b8;outline-offset:-4px}
+@media(min-width:0) and (max-width:599px){.select__base--filter{display:table;width:100%}
+}
+@media(min-width:600px){.select__base--filter{width:280px;display:inline-block;margin-right:4px}
+.select__base--filter:last-child{margin:0}
+}
+@media(min-width:1200px){.select__base--filter{width:328px;display:inline-block}
+}
+.select__selected,.select__list{background:var(--select-list-background-color,#fff);cursor:pointer}
+.select__list{position:relative;float:left;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box;display:none}
+.select--open .select__selected{z-index:11}
+.select--open .select__list{display:block;z-index:11;-webkit-box-shadow:0 1px 6px 0 var(--select-box-shadow,rgba(0,0,0,0.1));box-shadow:0 1px 6px 0 var(--select-box-shadow,rgba(0,0,0,0.1))}
+.select__item,.select__selected{display:inline-block;width:100%;border:0;padding:16px;-webkit-box-sizing:border-box;box-sizing:border-box;border-bottom:1px solid #f4f4f4}
+.select__item{text-align:left}
+.select__base--filter .select__item{color:var(--select-inactive-text-color,#626262)}
+.select__item:not(.select__item--disabled):hover{color:var(--select-hover-text-color,#121212)}
+.keyboard-focus .select__item:not(.select__item--disabled):hover:focus{outline:1px solid #1973b8;outline-offset:0}
+.select__item--disabled{opacity:.4;cursor:default}
+.select__selected{padding:16px}
+.select__selected .bbva-icon{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+.select__selected .bbva-icon.select__icon--expanded{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
+.select__selected__text{width:calc(100% - 40px);display:inline-block;text-align:left}
+.select__selected.select--active{background:#004481}
+.select__selected.select--active .select__selected__text{color:#fff}
+.select__selected.select--active .bbva-icon{color:#fff;padding:14px 4px;font-size:24px}
+.select__icon__wrapper{vertical-align:top;display:inline-block}
+.keyboard-focus .select__icon__wrapper:focus{outline:1px solid #fff;outline-offset:0}
+.keyboard-focus .select--focus:focus{outline:1px solid #1973b8;outline-offset:4px}

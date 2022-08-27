@@ -1,0 +1,20 @@
+@media(min-width:600px){.featureopportunitycard .opportunitycard__container{padding-bottom:0}
+}
+@media(min-width:600px) and (max-width:991px){.opportunitycard{-webkit-box-sizing:border-box;box-sizing:border-box;width:50%;float:left;padding-left:16px;padding-right:16px;margin-bottom:40px}
+.featureopportunitycard .opportunitycard__base{width:100%}
+}
+@media(min-width:992px){.opportunitycard{max-width:calc(50% - 32px);margin-right:32px;min-height:237px;float:left}
+.opportunitytabsplit__list--featured .opportunitycard:nth-child(3),.opportunitytabsplit__list--featured .opportunitycard:nth-child(4){margin-bottom:0;max-height:calc(50% - 24px);min-height:calc(50% - 24px)}
+.opportunitytabsplit__list--normal .opportunitycard{max-width:calc(25% - 32px);min-height:auto}
+.opportunitycard__image__title{font-size:22px;line-height:32px}
+.opportunitycard__title{font-size:13px;line-height:16px}
+.opportunitycard__title--manualcard{font-size:26px}
+.opportunitycard__title--manualcard{line-height:32px}
+.featureopportunitycard .opportunitycard__base{width:calc(100% - 32px)}
+}
+@media(min-width:992px) and (max-width:1199px){.opportunitycard--manual .opportunitycard__base,.opportunitycard--manual .opportunitycard__base .opportunitycard__link,.opportunitycard--manual .opportunitycard__container,.opportunitycard--manual .opportunitycard__image{max-height:139px;min-height:139px}
+}
+@media(min-width:1200px){.opportunitycard{min-height:252px}
+.opportunitycard--manual .opportunitycard__base,.opportunitycard--manual .opportunitycard__base .opportunitycard__link,.opportunitycard--manual .opportunitycard__container,.opportunitycard--manual .opportunitycard__image{max-height:172px;min-height:172px}
+.featureopportunitycard .opportunitycard__image,.featureopportunitycard .opportunitycard__link{height:453px}
+}

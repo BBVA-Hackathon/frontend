@@ -1,0 +1,25 @@
+@media(min-width:600px){.icondescriptionmodule__bottom{padding:16px 16px}
+}
+@media(min-width:992px){.icondescription__base{float:none;margin:0;padding-bottom:40px}
+.icondescription__title{font-size:22px;line-height:32px}
+.icondescription__cols{margin-top:8px}
+.icondescription__bottom{-ms-flex-wrap:wrap;flex-wrap:wrap}
+.icondescription__button+.icondescription__link{display:block;width:100%;margin-top:24px}
+.icondescription__cols-2 .icondescription__button+.icondescription__link{display:inline-block;width:auto;margin:0 0 0 32px}
+.icondescriptionmodule__base{padding-top:56px;padding-bottom:56px}
+.icondescriptionmodule__title{font-size:36px;line-height:40px}
+.icondescriptionmodule__title{margin:0 auto 32px;max-width:80%}
+.icondescriptionmodule__bottom{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.icondescriptionmodule__bottom--onlylink{padding-top:0}
+.icondescriptionmodule__link{margin:16px 0}
+.icondescriptionmodule__button+.icondescriptionmodule__link{margin:0 0 0 32px}
+.icondescriptionmodule__button{margin:0}
+}
+@media(min-width:992px) and (max-width:1199px){.icondescription__cols-2{width:448px;float:left;margin-left:16px;margin-right:16px;margin-left:0;margin-right:32px}
+.icondescription__cols-3{width:288px;float:left;margin-left:16px;margin-right:16px;margin-left:0;margin-right:32px}
+.icondescription__cols-4{width:208px;float:left;margin-left:16px;margin-right:16px;margin-left:0;margin-right:32px}
+}
+@media(min-width:1200px){.icondescription__cols-2{width:556px;float:left;margin-left:16px;margin-right:16px;margin-left:0;margin-right:32px}
+.icondescription__cols-3{width:360px;float:left;margin-left:16px;margin-right:16px;margin-left:0;margin-right:32px}
+.icondescription__cols-4{width:262px;float:left;margin-left:16px;margin-right:16px;margin-left:0;margin-right:32px}
+}

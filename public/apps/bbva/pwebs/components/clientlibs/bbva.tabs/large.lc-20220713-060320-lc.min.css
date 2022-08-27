@@ -1,0 +1,18 @@
+@media(min-width:600px){.productdescription__mod__content--tabs .tabs__base{padding:0 32px}
+}
+@media(min-width:600px) and (max-width:991px){.tabs__contents{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;float:left;padding-left:16px;padding-right:16px;padding:0}
+.tabs__list--oportunitytabs .tabs__list__item.tabs--active::after{width:40px;height:4px;background:#1464a5;border:0;top:50%}
+}
+@media(min-width:992px){.tabs__title{font-size:36px;line-height:40px}
+.tabs__wrapper{max-height:73px}
+.tabs__list__item{padding:24px}
+.productdescription .tabs__list__item{-webkit-box-sizing:border-box;box-sizing:border-box;white-space:break-spaces;max-height:73px}
+.productdescription__tabs-2 .tabs__list__item{width:calc(50% - 1px)}
+.productdescription__tabs-3 .tabs__list__item{width:33%}
+.tabs__list--oportunitytabs{height:72px}
+.tabs__list--oportunitytabs .tabs__list__item.tabs--active::after{bottom:-8px}
+}
+@media(min-width:992px) and (max-width:1199px){.tabs__contents{width:928px;float:left;margin-left:16px;margin-right:16px;width:100%;margin:0}
+}
+@media(min-width:1200px){.tabs__contents{width:1144px;float:left;margin-left:16px;margin-right:16px;width:100%;margin:0}
+}

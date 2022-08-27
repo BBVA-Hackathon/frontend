@@ -1,0 +1,29 @@
+:root{--textandimage-text-600-color:#121212;--textandimage-text-500-color:#626262}
+.dark-theme{--textandimage-text-600-color:#fff;--textandimage-text-500-color:#e6eaeb}
+.textandimage{display:block;width:100%;position:relative;zoom:1;padding:0 16px}
+.textandimage__base{float:none}
+.textandimage__base__clickable{position:relative;margin:24px 0}
+.textandimage__base__clickable .videolink__wrapper{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);bottom:initial;margin-top:0}
+.textandimage__section,.textandimage__subtitle,.textandimage__text,.textandimage__title{margin:24px 0}
+.textandimage__section{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:14px;line-height:24px;text-transform:uppercase}
+.textandimage__section .bbva-icon{color:#5bbeff;margin-left:0}
+.textandimage__title{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:22px;line-height:32px;margin:24px 0}
+.textandimage__subtitle--bbva600,.textandimage__text--bbva600{color:var(--textandimage-text-600-color,#121212)}
+.textandimage__subtitle--bbva500,.textandimage__text--bbva500{color:var(--textandimage-text-500-color,#626262)}
+.textandimage__text{margin:24px 0}
+.textandimage__text ol{list-style:decimal;list-style-position:inside}
+.textandimage__subtitle{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:20px;line-height:24px}
+.textandimage__note{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;color:var(--textandimage-text-500-color,#626262);margin-top:8px}
+.textandimage__note--desktop{display:none}
+.textandimage__note--mobile{display:none}
+.textandimage__video{position:absolute;top:0;left:0;width:100%;height:100%}
+.textandimage__video__container{margin:16px 0;position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden}
+.textandimage__btn{margin:24px 0}
+.textandimage__closebutton{position:absolute;color:#fff;cursor:pointer;top:-24px;right:8px}
+.textandimage__picture{position:relative;display:block}
+.columncontrol__base .textandimage .container,.columncontrol__base .textandimage__base{width:100%;margin-left:0;margin-right:0}
+@media(min-width:0) and (max-width:599px){.textandimage__base{width:100%;float:left;margin-left:0;margin-right:0;float:none}
+.textandimage__note--mobile{display:block}
+}
+@media(min-width:0) and (max-width:992px){.textandimage__iframe{display:block;padding:16px;-webkit-box-sizing:border-box;box-sizing:border-box;min-height:280px}
+}

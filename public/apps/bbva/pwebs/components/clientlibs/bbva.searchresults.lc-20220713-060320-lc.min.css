@@ -1,0 +1,14 @@
+@media(min-width:600px){.searchresults .h1title{padding-bottom:0}
+}
+.searchresults__load{min-height:200px;-webkit-box-sizing:border-box;box-sizing:border-box;padding-bottom:16px;position:relative}
+@media(min-width:0) and (max-width:991px){.searchresults__load{padding:0 16px 16px}
+}
+.searchresults__list{padding:32px 16px;border-bottom:1px solid #e9e9e9}
+.searchresults__list:last-child{border-bottom:0}
+.searchresults__list__title{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:#1973b8}
+.searchresults__list__desc{font-family:"BentonSansBBVA-Book",Helvetica,Arial,sans-serif;font-size:15px;line-height:24px}
+.searchresults__list__desc b{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:15px;line-height:24px}
+.searchresults__pagination{margin-top:64px;padding:16px 0;border-top:1px solid #e9e9e9}
+.searchresults__pagination__item{display:inline-block;border-right:1px solid #e9e9e9}
+.searchresults__pagination__item:last-child{border-right:0}
+.searchresults__pagination__item.active,.searchresults__pagination__item a{padding:0 16px}

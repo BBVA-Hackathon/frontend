@@ -1,0 +1,26 @@
+:root{--anchors-line-color:#121212;--anchors-link-active-color:#121212;--anchors-link-inactive-color:#626262;--anchors-background-color:#fff}
+.dark-theme{--anchors-line-color:#fff;--anchors-link-active-color:#fff;--anchors-link-inactive-color:#778892;--anchors-background-color:#091016}
+.anchor{z-index:3;position:relative;zoom:1;width:100%;display:block;min-height:40px}
+.anchor::before,.anchor::after{content:' ';display:block;height:0;width:0;overflow:hidden}
+.anchor::after{clear:both}
+.anchor__main{position:relative;zoom:1;width:100%;display:block;z-index:1}
+.anchor__main::before,.anchor__main::after{content:' ';display:block;height:0;width:0;overflow:hidden}
+.anchor__main::after{clear:both}
+.anchor__main .cardsmodule__base{padding-top:64px}
+.anchor__list__link{font-family:"BentonSansBBVA-Book",Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:var(--anchors-link-inactive-color,#626262);display:inline-block;padding:24px 0;margin:0 40px;text-align:center;cursor:pointer;border:0}
+.anchor__list__link:hover,.anchor__list__link:focus,.anchor__list__link--active{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;color:var(--anchors-link-active-color,#121212)}
+@media(min-width:992px){.anchor__list{height:calc(72px + 20px)}
+}
+.anchor__navigation{position:relative;height:0;padding:0 0 72px;z-index:5;border-bottom:1px solid #bdbdbd}
+@media(min-width:992px){.anchor__navigation{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+}
+.anchor__navigation__list{position:absolute;z-index:5;width:100%}
+@media(min-width:992px){.anchor__navigation__list{height:72px;overflow:hidden}
+}
+.anchor__navigation--fixed{position:fixed;top:48px;width:100%;background:var(--anchors-background-color,#fff);height:72px}
+.campaignlanding__template .anchor__navigation--fixed,.net .anchor__navigation--fixed,.content .anchor__navigation--fixed,.netcash .anchor__navigation--fixed{top:0}
+.anchor__navigation--fixed+.cosa{padding-top:72px}
+.anchor__navigation__line{position:absolute;background:var(--anchors-line-color,#121212);height:2px;width:0;-webkit-transition:all 400ms;transition:all 400ms;top:70px}
+.anchor__content{display:block;float:left;width:100%;position:relative;zoom:1}
+.anchor__content::before,.anchor__content::after{content:'.';display:block;height:0;overflow:hidden}
+.anchor__content::after{clear:both}

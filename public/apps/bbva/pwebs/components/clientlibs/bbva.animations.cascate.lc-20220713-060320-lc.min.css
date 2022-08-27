@@ -1,0 +1,8 @@
+@media(min-width:992px){.cascate{overflow:visible}
+.cascate__target{-webkit-transform:translateZ(0);transform:translateZ(0);will-change:opacity,top;position:relative;pointer-events:none;opacity:0}
+.cascate .cascate--normal--ttb{pointer-events:all;-webkit-animation:slideInTTB .66667s cubic-bezier(0.61,0,0.39,1) forwards;animation:slideInTTB .66667s cubic-bezier(0.61,0,0.39,1) forwards}
+.cascate .cascate--fast--ttb{pointer-events:all;-webkit-animation:slideInTTB .33333s cubic-bezier(0.61,0,0.39,1) forwards;animation:slideInTTB .33333s cubic-bezier(0.61,0,0.39,1) forwards}
+.cascate .cascate--slow--ttb{pointer-events:all;-webkit-animation:slideInTTB 1.33333s cubic-bezier(0.61,0,0.39,1) forwards;animation:slideInTTB 1.33333s cubic-bezier(0.61,0,0.39,1) forwards}
+.cascate .cascate--faster--ttb{pointer-events:all;-webkit-animation:slideInTTB .16667s cubic-bezier(0.61,0,0.39,1) forwards;animation:slideInTTB .16667s cubic-bezier(0.61,0,0.39,1) forwards}
+.cascate .cascate--slower--ttb{pointer-events:all;-webkit-animation:slideInTTB 2.66667s cubic-bezier(0.61,0,0.39,1) forwards;animation:slideInTTB 2.66667s cubic-bezier(0.61,0,0.39,1) forwards}
+}

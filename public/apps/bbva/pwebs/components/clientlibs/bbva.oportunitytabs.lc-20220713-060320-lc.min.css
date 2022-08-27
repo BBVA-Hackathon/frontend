@@ -1,0 +1,12 @@
+.oportunitytabs{position:relative;zoom:1;width:100%;display:block}
+.oportunitytabs::before,.oportunitytabs::after{content:' ';display:block;height:0;width:0;overflow:hidden}
+.oportunitytabs::after{clear:both}
+.oportunitytabs__base{padding-top:72px}
+.oportunitytabs__base .tabs__base{background:transparent}
+.oportunitytabs__base .horizontalarrowscroll__arrow{top:-23px}
+.oportunitytabs__title{font-family:"BentonSansBBVA-Book",Helvetica,Arial,sans-serif;font-size:24px;line-height:32px;text-align:center;margin-bottom:40px}
+@media(min-width:992px){.oportunitytabs__title{font-size:36px;line-height:40px}
+}
+@media(min-width:992px){.oportunitytabs__title{max-width:80%;margin:0 auto 40px}
+}
+.oportunitytabs__content{position:relative;top:-8px}

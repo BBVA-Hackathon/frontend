@@ -1,0 +1,18 @@
+:root{--cta-version-color:#626262}
+.dark-theme{--cta-version-color:#e6eaeb}
+.cta{position:relative;zoom:1;width:100%;display:block}
+.cta::after,.cta::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.cta::after{clear:both}
+.cta__base{position:relative;padding:40px 0;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0 auto;width:100%;text-align:center}
+.cta__imagewrapper{text-align:center}
+.cta__image{width:144px;margin:0 auto}
+.cta__title{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:24px;line-height:32px;margin:24px 0 16px}
+.cta__subtitle{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:18px;line-height:24px;margin-bottom:24px}
+.cta__version{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:var(--cta-version-color,#626262)}
+.cta__subtitle,.cta__title,.cta__version{text-align:center}
+.cta__buttons{margin-bottom:16px}
+.cta__btn .btn__basic{display:inline-block}
+.cta__general .bbva-svgicon{-webkit-filter:brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0) hue-rotate(204deg) brightness(104%) contrast(102%);filter:brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0) hue-rotate(204deg) brightness(104%) contrast(102%)}
+@media(min-width:0) and (max-width:599px){.cta__btn .btn__basic{width:80%}
+.cta__btn:nth-child(n+2){margin-top:16px}
+}

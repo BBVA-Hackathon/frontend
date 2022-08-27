@@ -1,0 +1,15 @@
+.promocard:last-child::after{clear:both}
+.promocard__subtitle+.promocard__title{margin-top:0}
+.promocard__subtitle{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;margin:24px 0 4px}
+.promocard__tag{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:#626262;margin-bottom:32px;min-height:24px}
+.promocard__body{margin-bottom:24px}
+.promocard__body.rte ul>li{margin:8px 0}
+.promocard__body.rte ul>li::before{margin-left:-20px}
+.promocard__category{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:#fff;background-color:#1973b8;position:absolute;bottom:0;right:0;padding:2px 24px}
+.promocard__contactinfo{margin-bottom:24px}
+.promocard__contactinfo{position:relative;padding-left:32px}
+.promocard__contactinfo:last-child{margin-bottom:0}
+.promocard__contactinfo.rte p{margin:0}
+.promocard__contactinfo .bbva-icon{position:absolute;top:0;left:0;margin-left:0;color:#1973b8}
+@media(min-width:0) and (max-width:599px){.promocard{padding:0 16px}
+}

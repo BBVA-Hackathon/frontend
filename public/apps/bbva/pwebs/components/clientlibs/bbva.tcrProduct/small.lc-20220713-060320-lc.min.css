@@ -1,0 +1,27 @@
+:root{--tcrproducts-background-color:#f4f4f4}
+.dark-theme{--tcrproducts-background-color:#0e1a25}
+.tcrproducts{position:relative;zoom:1;width:100%;display:block;margin:16px 0}
+.tcrproducts::after,.tcrproducts::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.tcrproducts::after{clear:both}
+.comparativemodule .tcrproducts{margin:32px 0}
+.tcrproducts__superior{padding:0 16px}
+.tcrproducts__informationcontainer{position:relative;height:auto;padding:0;display:-webkit-box;display:-ms-flexbox;display:flex}
+.tcrproducts--core .tcrproducts__informationcontainer{background-image:url(../../../../../../content/dam/public-web/global/system/styles/images/1600x1600_core.png);background-color:#004481}
+.tcrproducts--dark .tcrproducts__informationcontainer{background-image:url(../../../../../../content/dam/public-web/global/system/styles/images/1600x1600_dark.png);background-color:#043263}
+.tcrproducts--light .tcrproducts__informationcontainer{background-image:url(../../../../../../content/dam/public-web/global/system/styles/images/1600x1600_light.png);background-color:#1464a5}
+.tcrproducts--valor .tcrproducts__informationcontainer{background-image:url(../../../../../../content/dam/public-web/global/system/styles/images/1600x1600_valor.png);background-color:#6754b8}
+.tcrproducts--dark-aqua .tcrproducts__informationcontainer{background-image:url(../../../../../../content/dam/public-web/global/system/styles/images/1600x1600_dark-aqua.png);background-color:#028484}
+.tcrproducts__benefitscontainer{vertical-align:top}
+.tcrproducts__descriptioncontainer{padding:1px 0;background-color:var(--tcrproducts-background-color,#f4f4f4)}
+.tcrproducts .icondescription{width:100%}
+.tcrproducts .productbenefits__content{display:grid;grid-column-gap:1em;grid-template-columns:repeat(2,1fr)}
+.tcrproducts .productbenefits__description{display:contents}
+.tcrproducts .productbenefits__description--left .icondescription:nth-child(1){grid-row:1;grid-column:1}
+.tcrproducts .productbenefits__description--left .icondescription:nth-child(2){grid-row:2;grid-column:1}
+.tcrproducts .productbenefits__description--left .icondescription :nth-child(3){grid-row:3;grid-column:1}
+.tcrproducts .productbenefits__description--right .icondescription:nth-child(1){grid-row:1;grid-column:2}
+.tcrproducts .productbenefits__description--right .icondescription:nth-child(2){grid-row:2;grid-column:2}
+.tcrproducts .productbenefits__description--right .icondescription:nth-child(3){grid-row:3;grid-column:2}
+@media(min-width:0) and (max-width:599px){.tcrproducts__benefitscontainer,.tcrproducts__informationcontainer{width:100%;float:left;margin-left:0;margin-right:0}
+.tcrproducts .productbenefits__content{display:-webkit-box;display:-ms-flexbox;display:flex}
+}

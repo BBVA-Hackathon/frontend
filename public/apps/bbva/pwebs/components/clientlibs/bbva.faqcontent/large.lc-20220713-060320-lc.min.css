@@ -1,0 +1,9 @@
+@media(min-width:600px){.faqcontent__list__item__col{width:50%;float:left;margin-bottom:0}
+.faqcontent__list__content__icon{right:-40px}
+}
+@media(min-width:600px) and (max-width:991px){.accordion__list__item__title .faqcontent__list__content__icon{line-height:20px}
+}
+@media(min-width:992px){.faqcontent__title{font-size:22px;line-height:32px}
+.faqcontent__moreinfo{margin-top:32px}
+.faqcontent__morequestion{margin-top:40px}
+}

@@ -1,0 +1,19 @@
+@media(min-width:600px){.crosseling__title{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:32px;line-height:40px;margin-bottom:48px}
+}
+@media(min-width:600px) and (min-width:992px){.crosseling__title{font-size:68px;line-height:72px}
+}
+@media(min-width:600px) and (max-width:991px){.crosseling__base{-webkit-box-sizing:border-box;box-sizing:border-box;width:50%;float:left;padding-left:16px;padding-right:16px;padding:0 16px;height:176px}
+.crosseling__base:nth-of-type(n+3){margin-top:32px}
+}
+@media(min-width:992px){.crosseling__module{min-height:408px;padding:72px 0}
+.crosseling__link{overflow:hidden;height:100%}
+.crosseling__title{font-size:36px;line-height:40px}
+.crosseling__title{max-width:80%;margin:0 auto 48px}
+}
+@media(min-width:992px) and (max-width:1199px){.crosseling__base{width:208px;float:left;margin-left:16px;margin-right:16px;height:176px}
+.crosseling__image{min-height:100%}
+}
+@media(min-width:1200px){.crosseling__base{width:262px;float:left;margin-left:16px;margin-right:16px;height:176px}
+.crosseling__link{padding-top:0}
+.crosseling__image{min-height:100%}
+}

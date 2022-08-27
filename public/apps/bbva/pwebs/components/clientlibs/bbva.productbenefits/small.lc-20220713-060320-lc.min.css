@@ -1,0 +1,23 @@
+:root{--svg-icon-color:brightness(0) saturate(100%) invert(69%) sepia(51%) saturate(0) hue-rotate(146deg) brightness(99%) contrast(92%)}
+.dark-theme{--svg-icon-color:brightness(0) saturate(100%) invert(74%) sepia(15%) saturate(158%) hue-rotate(157deg) brightness(95%) contrast(90%)}
+.productbenefits{position:relative;zoom:1;width:100%;display:block}
+.productbenefits::after,.productbenefits::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.productbenefits::after{clear:both}
+.productbenefits__sectionheadline{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:14px;line-height:24px;text-transform:uppercase;text-transform:none;margin-bottom:16px}
+.tcrproducts__benefitscontainer .productbenefits__sectionheadline{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px}
+.productbenefits__sectionheadline .bbva-icon{color:#5bbeff;margin-left:0}
+.productbenefits__sectionheadline .bbva-icon::before{display:inline-block;-webkit-transform:scaleY(2.5) rotate(180deg);transform:scaleY(2.5) rotate(180deg);font-size:16px;vertical-align:text-bottom}
+.productbenefits__icon{color:#1973b8;display:inline-block}
+.productbenefits__title{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:22px;line-height:32px;margin-bottom:32px}
+.tcrproducts__benefitscontainer .productbenefits__title{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:18px;line-height:24px}
+.productbenefits__content{text-align:left;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.productbenefits__description{margin-bottom:28px}
+.productbenefits__description .icondescription__title{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;margin:0}
+.productbenefits__description .icondescription__text{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px}
+.productbenefits__description .icondescription__icon.bbva-svgicon{-webkit-filter:var(--svg-icon-color,brightness(0) saturate(100%) invert(69%) sepia(51%) saturate(0) hue-rotate(146deg) brightness(99%) contrast(92%));filter:var(--svg-icon-color,brightness(0) saturate(100%) invert(69%) sepia(51%) saturate(0) hue-rotate(146deg) brightness(99%) contrast(92%));margin-bottom:8px}
+.productbenefits__description .icondescription__bottom{margin-top:32px}
+.productbenefits__description .icondescription__base{width:100%}
+@media(min-width:0) and (max-width:599px){.productbenefits__base{margin-top:32px}
+.productbenefits__description{width:100%;float:left;margin-left:0;margin-right:0;padding:0;margin:8px 0 0 0}
+.productbenefits__description .icondescription__base{margin:0;padding:0 0 24px}
+}

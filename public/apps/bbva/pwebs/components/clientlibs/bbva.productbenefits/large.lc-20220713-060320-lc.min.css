@@ -1,0 +1,20 @@
+@media(min-width:600px){.productbenefits__description .icondescription__title{margin-top:8px}
+}
+@media(min-width:600px) and (max-width:991px){.productbenefits__base{margin-top:56px}
+.productbenefits__description{-webkit-box-sizing:border-box;box-sizing:border-box;width:50%;float:left;padding-left:16px;padding-right:16px;padding:0;margin:4px 0 0 0}
+.productbenefits__description .icondescription__icon{margin-bottom:4px}
+.productbenefits__description .icondescription__base{padding:0 24px 28px 0}
+}
+@media(min-width:992px){.productbenefits__sectionheadline{padding:0 24px}
+.productbenefits__sectionheadline{margin:8px 0 32px}
+.productbenefits__title{font-size:26px}
+.productbenefits__title{padding:0 24px;margin-bottom:16px}
+.tcrproducts__benefitscontainer .productbenefits__title{font-size:20px}
+.productbenefits__description .icondescription__title{margin:0}
+.productbenefits__description .icondescription__icon.bbva-svgicon{margin-bottom:16px}
+.productbenefits__description .icondescription__base{padding:16px 0 16px 24px}
+}
+@media(min-width:992px) and (max-width:1199px){.productbenefits__description{width:208px;float:left;margin-left:16px;margin-right:16px;margin:0}
+}
+@media(min-width:1200px){.productbenefits__description{width:262px;float:left;margin-left:16px;margin-right:16px;margin:0}
+}

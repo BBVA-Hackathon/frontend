@@ -1,0 +1,12 @@
+@media(min-width:992px){.h1title{margin:56px 0}
+.h1title--pos-full{padding-left:16px;padding-right:16px}
+.h1title__title{font-size:48px;line-height:56px}
+.h1title__subtitle{font-size:18px}
+.h1title__button,.h1title__subtitle{margin-top:24px}
+.h1title--desktop{display:block}
+.h1title--mobile{display:none}
+}
+@media(min-width:992px) and (max-width:1199px){.h1title--pos-center{width:608px;float:left;margin-left:176px;margin-right:-100%;float:none}
+}
+@media(min-width:1200px){.h1title--pos-center{width:752px;float:left;margin-left:212px;margin-right:-100%;float:none}
+}

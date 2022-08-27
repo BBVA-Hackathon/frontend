@@ -1,0 +1,30 @@
+.producttcrcondensed__base,.producttcrcondensed__container{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;min-height:auto}
+.producttcrcondensed__container{background-size:cover;background-position:center}
+.producttcrcondensed__column{width:100%;display:block;position:relative}
+.producttcrcondensed__list{position:relative;zoom:1;width:100%;display:block;font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:#fff;width:100%}
+.producttcrcondensed__list::after,.producttcrcondensed__list::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.producttcrcondensed__list::after{clear:both}
+.producttcrcondensed__list__item{position:relative;zoom:1;width:100%;display:block;display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.producttcrcondensed__list__item::after,.producttcrcondensed__list__item::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.producttcrcondensed__list__item::after{clear:both}
+.producttcrcondensed__list__item .bbva-svgicon{height:24px;width:24px;-webkit-filter:brightness(0) saturate(100%) invert(68%) sepia(24%) saturate(1220%) hue-rotate(131deg) brightness(98%) contrast(84%);filter:brightness(0) saturate(100%) invert(68%) sepia(24%) saturate(1220%) hue-rotate(131deg) brightness(98%) contrast(84%)}
+.producttcrcondensed__list .listwithicon{margin:16px 0}
+.producttcrcondensed__list .listwithicon:first-child{margin-top:24px}
+.producttcrcondensed__list .listwithicon__text{display:inline-block;max-width:calc(100% - 24px)}
+.producttcrcondensed__list .listwithicon:last-child .producttcrcondensed__list__item{margin-bottom:0}
+.producttcrcondensed__list .bbva-icon{color:#2dcccd;margin-left:0;float:left;font-size:16px}
+.producttcrcondensed .productinformation__base{padding:24px 16px 32px}
+.producttcrcondensed .productinformation__bottom{position:absolute;bottom:0;margin-bottom:0;width:100%}
+.producttcrcondensed .productinformation__bottom__col{margin-top:32px}
+.producttcrcondensed .productinformation__bottom__col:nth-child(2){margin-top:16px}
+.producttcrcondensed .productinformation__text{padding-right:0;margin-bottom:16px}
+.producttcrcondensed .productinformation__subheader--unique{margin-bottom:0}
+.producttcrcondensed .productinformation__subheader--principal{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:#fff}
+.producttcrcondensed .productinformation__subheader--right{margin-left:16px;float:right}
+@media(min-width:0) and (max-width:991px){.producttcrcondensed__base,.producttcrcondensed__container{display:block}
+.producttcrcondensed .productinformation__bottom{position:relative}
+.producttcrcondensed .productinformation__subheader--left{margin-bottom:16px}
+.producttcrcondensed .productinformation__subheader--right{margin-bottom:24px}
+}
+@media(min-width:0) and (max-width:599px){.producttcrcondensed .productinformation__bottom__col{width:100%;min-height:0}
+}

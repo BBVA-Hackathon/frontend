@@ -1,0 +1,27 @@
+:root{--disclaimer-text-color:#626262;--disclaimer-heading-color:#121212}
+.dark-theme{--disclaimer-text-color:#e6eaeb;--disclaimer-heading-color:#fff}
+.disclaimer{position:relative;zoom:1;width:100%;display:block}
+.disclaimer::before,.disclaimer::after{content:' ';display:block;height:0;width:0;overflow:hidden}
+.disclaimer::after{clear:both}
+.disclaimer__container{position:relative;zoom:1;width:100%;display:block}
+.disclaimer__container::before,.disclaimer__container::after{content:' ';display:block;height:0;width:0;overflow:hidden}
+.disclaimer__container::after{clear:both}
+.disclaimer__base{padding:40px 0}
+.disclaimer__title{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:22px;line-height:32px;margin:0 16px 16px}
+@media(min-width:992px){.disclaimer__title{font-size:26px}
+}
+@media(min-width:992px){.disclaimer__title{margin-bottom:24px}
+}
+.disclaimer__subtitle{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;margin:0 16px}
+.disclaimer__text{margin:40px 16px;color:var(--disclaimer-text-color,#626262)}
+@media(min-width:992px){.disclaimer__text{margin-top:24px}
+}
+.disclaimer__text h3{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:var(--disclaimer-heading-color,#121212)}
+.disclaimer__text p:first-child{margin-top:0}
+.disclaimer__text p:last-child{margin-bottom:0}
+.disclaimer__text:last-child{margin-bottom:0}
+.disclaimer__img{-webkit-box-sizing:border-box;box-sizing:border-box;width:calc(50% - 32px);margin:40px 0 0 16px}
+@media(min-width:600px){.disclaimer__img{width:128px}
+}
+@media(min-width:992px){.disclaimer__img{width:160px;height:96px}
+}

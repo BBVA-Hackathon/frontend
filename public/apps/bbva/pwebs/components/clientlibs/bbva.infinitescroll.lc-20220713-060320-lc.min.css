@@ -1,0 +1,2 @@
+.infinitescroll__article:nth-child(n+2){background-color:#fff;position:relative;z-index:8}
+.infinitescroll__article:nth-child(n+2) .stickbar{visibility:hidden;height:0}

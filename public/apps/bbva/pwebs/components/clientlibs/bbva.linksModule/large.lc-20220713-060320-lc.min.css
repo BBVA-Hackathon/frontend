@@ -1,0 +1,12 @@
+@media(min-width:600px){.linksmodule__base{padding-top:72px;padding-bottom:64px}
+}
+@media(min-width:600px) and (max-width:991px){.linksmodule__layout .linksmodule__content>.download,.linksmodule__layout .linksmodule__content>.link,.linksmodule__layout .linksmodule__content>.linksmodule__columncontent,.linksmodule__layout .linksmodule__content>.linksmodule__columncontent__title{width:50%}
+.linksmodule__content>.download,.linksmodule__content>.link,.linksmodule__content>.linksmodule__columncontent,.linksmodule__content>.linksmodule__columncontent__title{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;float:left;padding-left:16px;padding-right:16px}
+}
+@media(min-width:992px){.linksmodule__header{font-size:22px;line-height:32px}
+.linksmodule__header{max-width:80%;margin:0 auto 32px;-ms-flex-preferred-size:100%;flex-basis:100%}
+.linksmodule__layout--3 .linksmodule__content>.download,.linksmodule__layout--3 .linksmodule__content>.link,.linksmodule__layout--3 .linksmodule__content>.linksmodule__columncontent,.linksmodule__layout--3 .linksmodule__content>.linksmodule__columncontent__title{width:33.3%}
+.linksmodule__layout--4 .linksmodule__content>.download,.linksmodule__layout--4 .linksmodule__content>.link,.linksmodule__layout--4 .linksmodule__content>.linksmodule__columncontent,.linksmodule__layout--4 .linksmodule__content>.linksmodule__columncontent__title{width:25%}
+.linksmodule__content .linksmodule__columncontent__title{font-size:20px}
+.linksmodule__content .linksmodule__columncontent.extendlist{margin-top:24px}
+}

@@ -1,0 +1,5 @@
+:root{--readingbar-bar-color:#1973b8}
+.dark-theme{--readingbar-bar-color:#5bbeff}
+.readingbar__bar{height:4px;background:var(--readingbar-bar-color,#1464a5);position:fixed;z-index:15;will-change:width;-webkit-transition:width .16667s;transition:width .16667s}
+.readingbar__educational{top:48px}
+.net .readingbar__educational,.app .readingbar__educational,.app-empresa .readingbar__educational,.content .readingbar__educational{top:0}

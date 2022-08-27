@@ -1,0 +1,8 @@
+@media(min-width:992px){.calltoaction__head{font-size:26px}
+}
+@media(min-width:992px) and (max-width:1199px){.calltoaction__base{width:288px;float:left;margin-left:16px;margin-right:16px;float:none}
+}
+@media(min-width:1200px){.calltoaction__base{width:360px;float:left;margin-left:16px;margin-right:16px;float:none}
+}
+@media(min-width:600px) and (max-width:991px){.calltoaction__base{-webkit-box-sizing:border-box;box-sizing:border-box;width:50%;float:left;padding-left:16px;padding-right:16px;float:none}
+}

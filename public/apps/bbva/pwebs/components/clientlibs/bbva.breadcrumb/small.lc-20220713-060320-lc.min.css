@@ -1,0 +1,17 @@
+:root{--breadcrumb-background-color:#fbfbfb;--bradcrumb-chevron:#1973b8}
+.dark-theme{--breadcrumb-background-color:#0e1a25;--bradcrumb-chevron:#5bbeff}
+.breadcrumb{position:relative;zoom:1;width:100%;display:block}
+.breadcrumb::after,.breadcrumb::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.breadcrumb::after{clear:both}
+.breadcrumb__base{padding:20px 0;color:var(--bradcrumb-chevron,#1973b8);background:var(--breadcrumb-background-color,#fbfbfb)}
+.breadcrumb__list{padding:4px 0;display:inline-block}
+.breadcrumb__list__item{display:inline-block;padding-left:16px}
+.breadcrumb__list__item__link{display:inline-block;line-height:24px}
+.breadcrumb__list .bbva-icon{font-size:24px;line-height:24px;margin:0 2px 0 16px;vertical-align:bottom}
+.breadcrumb__title{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;padding-right:16px;display:inline-block}
+.breadcrumb__social{display:block;padding:16px 0 4px 16px}
+.breadcrumb__social .bbva-icon{font-size:32px;line-height:32px;color:var(--bradcrumb-chevron,#1973b8)}
+.breadcrumb__navigation{display:inline-block}
+@media(min-width:0) and (max-width:991px){.breadcrumb__social__item:first-child .bbva-icon{margin-left:0}
+.breadcrumb--desktop{display:none}
+}

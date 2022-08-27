@@ -1,0 +1,25 @@
+@media(min-width:600px){.infographics__introduction .infographics__imagewrapper{height:280px}
+.infographics__title{margin-bottom:32px}
+}
+@media(min-width:600px) and (max-width:991px){.infographics__imagewrapper .infographics__image{height:192px}
+.infographics__mainimagewrapper .infographics__image{height:100%}
+}
+@media(min-width:992px){.infographics__base{margin:56px 0}
+.infographics__base.background--100{padding:56px 16px}
+.infographics__content{display:inline-block;padding:56px;position:relative;width:608px;float:left;margin-left:16px;margin-right:16px}
+.infographics__introduction .infographics__content{width:448px;float:left;margin-left:16px;margin-right:16px;padding:56px}
+.infographics__imagewrapper{width:288px;float:left;margin-left:16px;margin-right:16px}
+.infographics__introduction .infographics__imagewrapper{width:448px;float:left;margin-left:16px;margin-right:16px;height:auto;margin-right:0;margin-left:auto;float:right}
+.infographics__title{font-size:26px}
+.infographics__text{font-size:18px}
+.infographics__microillustrationwrapper{padding:48px}
+.infographics__description--left .container{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
+.infographics__description--left .infographics__content{padding:56px 56px 56px 0}
+.infographics__description--right .container{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
+.infographics__description--right .infographics__content{padding:56px 0 56px 56px}
+}
+@media(min-width:1200px){.infographics__content{width:752px;float:left;margin-left:16px;margin-right:16px}
+.infographics__introduction .infographics__content{width:556px;float:left;margin-left:16px;margin-right:16px}
+.infographics__imagewrapper{width:360px;float:left;margin-left:16px;margin-right:16px}
+.infographics__introduction .infographics__imagewrapper{width:556px;float:left;margin-left:16px;margin-right:16px}
+}

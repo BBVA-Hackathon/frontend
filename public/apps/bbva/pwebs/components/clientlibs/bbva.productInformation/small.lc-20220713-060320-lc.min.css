@@ -1,0 +1,40 @@
+.productinformation{position:relative;zoom:1;width:100%;display:block}
+.productinformation::after,.productinformation::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.productinformation::after{clear:both}
+.productinformation__base{background-size:cover;background-position:center;padding:24px 16px;width:100%}
+.productinformation__base--aqua{background-image:url(../../../../../../content/dam/public-web/global/system/styles/images/1600x1600_aqua.png);background-color:#2dcccd}
+.productinformation__base--core{background-image:url(../../../../../../content/dam/public-web/global/system/styles/images/1600x1600_core.png);background-color:#004481}
+.productinformation__base--dark{background-image:url(../../../../../../content/dam/public-web/global/system/styles/images/1600x1600_dark.png);background-color:#043263}
+.productinformation__base--light{background-image:url(../../../../../../content/dam/public-web/global/system/styles/images/1600x1600_light.png);background-color:#1464a5}
+.productinformation__base--valor{background-image:url(../../../../../../content/dam/public-web/global/system/styles/images/1600x1600_valor.png);background-color:#6754b8}
+.productinformation__base--dark-aqua{background-image:url(../../../../../../content/dam/public-web/global/system/styles/images/1600x1600_dark-aqua.png);background-color:#028484}
+.productinformation__header{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:22px;line-height:32px;margin:0 0 16px;color:#fff}
+.productinformation__subheader--left,.productinformation__subheader--right{overflow:hidden;display:inline-block;width:calc(50% - 32px / 2)}
+.productinformation__subheader--unique{margin-bottom:28px;width:100%}
+.productinformation__subheader--left{margin-right:16px}
+.productinformation__subheader--right{margin-left:16px;float:right}
+.productinformation__subheader--principal{color:#fff}
+.productinformation__subheader--secondary{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:#fff}
+.productinformation__subheader--secondary b{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:18px;line-height:24px}
+.productinformation__subheader sup{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:20px;line-height:24px}
+.productinformation__bottom{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;width:100%}
+.productinformation__bottom__actions{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;width:100%}
+.productinformation__bottom__actions--onlybtn.cta__prehiding--hidden{display:none}
+.productinformation__bottom__col{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;min-height:56px}
+.productinformation__bottom__col--unique.productinformation__bottom__col--unique{width:100%}
+.productinformation__bottom__col--desktop{display:none}
+.productinformation__bottom__col .bbva-icon{margin-left:0}
+.productinformation__bottom__wrapper{width:100%}
+.productinformation__text{color:#fff;width:100%}
+.productinformation__btn+.productinformation__link{margin-left:40px}
+.cta__prehiding--hidden .productinformation__link{margin-left:0}
+.cta__prehiding--hidden .productinformation__btn{display:none}
+@media(min-width:0) and (max-width:599px){.productinformation__subheader--left,.productinformation__subheader--right{position:relative;zoom:1;width:100%;display:block;width:100%;float:left;margin-left:0;margin-right:0;margin-bottom:16px}
+.productinformation__subheader--left::after,.productinformation__subheader--left::before,.productinformation__subheader--right::after,.productinformation__subheader--right::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.productinformation__subheader--left::after,.productinformation__subheader--right::after{clear:both}
+.productinformation__bottom__col{margin-top:32px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
+.productinformation__btn+.productinformation__link{margin:16px 0 0}
+}
+@media(min-width:0) and (max-width:991px){.productinformation__subheader--principal{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:18px;line-height:24px}
+.productinformation__subheader--principal b{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:18px;line-height:24px}
+}

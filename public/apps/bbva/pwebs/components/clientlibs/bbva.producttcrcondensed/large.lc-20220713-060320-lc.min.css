@@ -1,0 +1,31 @@
+@media(min-width:600px){.producttcrcondensed__list .listwithicon__text{max-width:calc(100% - 32px)}
+.producttcrcondensed__list .bbva-icon{margin-top:4px;font-size:24px}
+.producttcrcondensed .productinformation__link .bbva-svgicon{margin-left:8px}
+.producttcrcondensed .productinformation__header{margin-bottom:34px}
+}
+@media(min-width:992px){.producttcrcondensed__column{width:calc(50% - 32px);margin-right:32px}
+.producttcrcondensed__column:last-child{margin-left:32px;margin-right:0}
+.producttcrcondensed__column--with-bottom{padding-bottom:88px}
+.producttcrcondensed__list{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:16px;line-height:24px}
+.producttcrcondensed__list .listwithicon{margin:24px 0}
+.producttcrcondensed__list .listwithicon:first-child{margin-top:8px}
+.producttcrcondensed__list .listwithicon__text{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:16px;line-height:24px}
+.producttcrcondensed .productinformation__base{padding:40px}
+.producttcrcondensed .productinformation__bottom__col{margin-top:16px}
+.producttcrcondensed .productinformation__bottom__col:nth-child(2){display:block}
+.producttcrcondensed .productinformation__bottom__actions{margin-top:40px}
+.producttcrcondensed .productinformation__text{padding-right:32px;margin-bottom:0}
+.producttcrcondensed .productinformation__text--with-text{margin-bottom:32px}
+.producttcrcondensed .productinformation__btn{float:right}
+.producttcrcondensed .productinformation__header{margin-bottom:40px}
+.producttcrcondensed .productinformation__subheader--principal{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:16px;line-height:24px}
+.producttcrcondensed .productinformation__subheader--left,.producttcrcondensed .productinformation__subheader--right{width:calc(50% - (40px / 2))}
+.producttcrcondensed .productinformation__subheader--right{margin-left:40px}
+.producttcrcondensed .productinformation__subheader--left{margin-right:0}
+.producttcrcondensed .productinformation__subheader b{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:18px;line-height:24px}
+}
+@media(min-width:992px) and (min-width:992px){.producttcrcondensed__list{font-size:18px}
+.producttcrcondensed__list .listwithicon__text{font-size:18px}
+.producttcrcondensed .productinformation__subheader--principal{font-size:18px}
+.producttcrcondensed .productinformation__subheader b{font-size:20px}
+}

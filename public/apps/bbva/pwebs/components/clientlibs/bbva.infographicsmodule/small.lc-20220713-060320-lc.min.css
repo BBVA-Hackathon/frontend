@@ -1,0 +1,43 @@
+:root{--infographics-text-color:#626262;--infographics-background-color--100:#f4f4f4;--infographics-background-color--white:#fff}
+.dark-theme{--infographics-text-color:#e6eaeb;--infographics-background-color--100:#0e1a25;--infographics-background-color--white:#091016}
+.infographics__base{position:relative;zoom:1;width:100%;display:block;background:var(--infographics-background-color--white,#fff);width:100%;padding:0 16px;margin:40px 0}
+.infographics__base::after,.infographics__base::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.infographics__base::after{clear:both}
+.infographics__base.background--white .infographics__description.background--transparent,.infographics__base.background--white .infographics__introduction{background:var(--infographics-background-color--100,#f4f4f4)}
+.infographics__base.background--100{background:var(--infographics-background-color--100,#f4f4f4);margin:0;padding:40px 16px}
+.infographics__base.background--100 .infographics__description.background--transparent,.infographics__base.background--100 .infographics__introduction{background:var(--infographics-background-color--white,#fff)}
+.infographics__content{display:inline-block;vertical-align:middle;width:100%;margin:0;padding:32px}
+.infographics__content p{margin:16px 0}
+.infographics__content p:last-of-type{margin-bottom:0}
+.infographics__content ul li{margin:0 0 16px 0;padding-left:24px}
+.infographics__content ul li:last-of-type{margin-bottom:0}
+.infographics__content ul li::before{content:"\ea0e";font-family:bbvaiconfont;font-style:normal;font-weight:400;vertical-align:middle;color:#1973b8;margin-right:8px;display:inline-block;margin-left:-24px;-webkit-transform:scaleY(1) rotate(0);transform:scaleY(1) rotate(0)}
+.infographics__imagewrapper{display:inline-block;vertical-align:middle}
+.infographics__introduction .infographics__imagewrapper{height:152px}
+.infographics__description .infographics__imagewrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:360px;float:left;margin-left:16px;margin-right:16px}
+.infographics__title{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:22px;line-height:32px;margin:0 auto 16px}
+.infographics__text{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:16px;line-height:24px;color:var(--infographics-text-color,#626262)}
+.infographics__description .infographics__text{color:var(--infographics-text-color,#626262)}
+.background--medium-blue-dark .infographics__text a{color:#5bbeff}
+.background--medium-blue-dark .infographics__text a:hover{color:#fff}
+.infographics__text li{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px}
+.infographics__introduction{border-bottom:1px solid #d3d3d3;position:relative}
+.infographics__introduction .container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.infographics__mainimagewrapper,.infographics__microillustrationwrapper{display:inline-block;position:relative;vertical-align:top;width:50%;height:100%;overflow:hidden}
+.infographics__microillustrationwrapper{padding:32px}
+.infographics__imagewrapper .infographics__image{height:136px;margin:32px auto 0;width:auto}
+.infographics__mainimagewrapper .infographics__image{-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center;height:100%;width:100%;margin:0}
+.infographics__microillustrationwrapper .infographics__image{max-height:192px;height:100%;position:relative;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);margin:0 auto;min-width:120px;-o-object-fit:contain;object-fit:contain}
+.infographics__description{border-bottom:1px solid #d3d3d3}
+.infographics__description .container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
+.infographics__description.background--medium-blue-dark .infographics__text{color:#fff}
+.infographics__description.background--medium-blue-dark li::before{color:#5bbeff}
+.background--white .infographics__description.background--transparent{background-color:var(--infographics-background-color--white,#fff)}
+@media(min-width:0) and (max-width:991px){.infographics__introduction .infographics__imagewrapper{width:100%}
+.infographics__description .infographics__imagewrapper{width:100%;margin:0}
+.infographics__introduction .container{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
+}
+@media(min-width:0) and (max-width:599px){.infographics__microillustrationwrapper .infographics__image{max-width:64px;max-height:64px}
+}
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none){.infographics__mainimagewrapper .infographics__image{min-height:100%;display:block;position:absolute;top:-9999px;bottom:-9999px;left:-9999px;right:-9999px;margin:auto;width:auto;min-width:100%;max-width:none;-o-object-fit:cover;object-fit:cover}
+}

@@ -1,0 +1,80 @@
+.playlistvideo{position:relative;zoom:1;width:100%;display:block}
+.playlistvideo::before,.playlistvideo::after{content:' ';display:block;height:0;width:0;overflow:hidden}
+.playlistvideo::after{clear:both}
+.playlistvideo__base{padding:24px 0 32px;position:relative}
+@media(min-width:992px){.playlistvideo__wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.playlistvideo__wrapper.container::after{display:none}
+}
+.playlistvideo__heading{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:22px;line-height:32px;text-align:center;margin-bottom:24px}
+@media(min-width:992px){.playlistvideo__heading{font-size:26px}
+}
+@media(min-width:992px){.playlistvideo__heading--mobile{display:none}
+}
+.playlistvideo__heading--desktop{display:none}
+@media(min-width:992px){.playlistvideo__heading--desktop{text-align:left;display:block}
+}
+@media(min-width:992px){.playlistvideo__playlist{width:288px;margin:0 16px}
+}
+@media(min-width:1200px){.playlistvideo__playlist{width:360px}
+}
+.playlistvideo__list{background-color:#f4f4f4;padding:20px 0}
+.background--core-blue-dark .playlistvideo__list{background-color:#072146}
+@media(min-width:992px){.playlistvideo__list{height:305px}
+}
+.playlistvideo__autoplay{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:14px;line-height:24px;text-transform:uppercase;padding:0 16px 20px}
+@media(min-width:600px) and (max-width:991px){.playlistvideo__autoplay{padding:0 32px 20px}
+}
+.playlistvideo__divider{opacity:.4;color:#fff;margin:0}
+.playlistvideo__check{width:100%}
+.playlistvideo__checkbox{float:right}
+.playlistvideo__videos{height:192px;overflow:hidden}
+@media(min-width:600px){.playlistvideo__videos{overflow-y:scroll}
+}
+@media(min-width:992px){.playlistvideo__videos{height:240px}
+}
+.playlistvideo__videos--expanded{height:auto}
+@media(min-width:992px){.playlistvideo__video{width:608px;float:left;margin-left:16px;margin-right:16px}
+}
+@media(min-width:1200px){.playlistvideo__video{width:752px;float:left;margin-left:16px;margin-right:16px}
+}
+.playlistvideo__youtubewrapper{width:100%;margin-bottom:24px;position:relative;padding-top:56%}
+@media(min-width:0) and (max-width:599px){.playlistvideo__youtubewrapper{width:calc(100% + 32px);left:-16px}
+}
+@media(min-width:600px) and (max-width:991px){.playlistvideo__youtubewrapper{width:calc(100% + 64px);left:-32px}
+}
+@media(min-width:1200px){.playlistvideo__youtubewrapper{height:405px}
+}
+.playlistvideo__youtube{width:100%;height:100%;position:absolute;top:0}
+.playlistvideo__summary{padding:0 16px}
+@media(min-width:600px) and (max-width:991px){.playlistvideo__summary{padding:0 32px}
+}
+.playlistvideo__title{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:18px;line-height:24px;margin-bottom:16px}
+@media(min-width:992px){.playlistvideo__title{font-size:20px}
+}
+.playlistvideo__description{display:block;margin-bottom:40px}
+.playlistvideo__title,.playlistvideo__description{text-align:center}
+@media(min-width:992px){.playlistvideo__title,.playlistvideo__description{text-align:left}
+}
+@media(min-width:992px){.playlistvideo__showmore{display:none}
+}
+.playlistvideo__show{border:0}
+.playlistvideo__show .bbva-icon{font-size:16px;line-height:16px}
+.background--core-blue-dark .playlistvideo__show{color:#5bbeff}
+.tabs__content__item .playlistvideomodule{width:auto}
+@media(min-width:992px) and (max-width:1199px){.tabs__content__item .playlistvideomodule{margin:0 calc((100vw - 928px) / -2)}
+}
+@media(min-width:1200px){.tabs__content__item .playlistvideomodule{margin:0 calc((100vw - 1144px) / -2)}
+}
+.listvideo__base{padding:8px 16px;display:-webkit-box;display:-ms-flexbox;display:flex}
+@media(min-width:600px) and (max-width:991px){.listvideo__base{padding:8px 32px}
+}
+.listvideo__base--active{background:#d3d3d3}
+.background--core-blue-dark .listvideo__base--active{background-color:#004481}
+.listvideo__preview{position:relative;width:126px;height:80px;overflow:hidden;-ms-flex-negative:0;flex-shrink:0}
+.listvideo__thumbnail{position:relative;top:-8px}
+.listvideo__duration{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;background:#121212;color:#fff;position:absolute;bottom:8px;right:4px;padding:0 8px;border-radius:4px}
+.listvideo__summary{padding-left:16px;border:0;text-align:left;width:100%}
+.keyboard-focus .listvideo__summary:focus{outline:1px solid #1973b8;outline-offset:-4px}
+.listvideo__title{font-family:"BentonSansBBVA-Medium",Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;margin-bottom:8px}
+.listvideo__author{font-family:"BentonSansBBVA-Book",Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;color:#626262}
+.background--core-blue-dark .listvideo__title,.background--core-blue-dark .listvideo__author{color:#fff}

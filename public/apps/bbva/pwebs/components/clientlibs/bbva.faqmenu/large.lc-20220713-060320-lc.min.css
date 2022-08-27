@@ -1,0 +1,9 @@
+@media(min-width:992px){.faqmenu__base>.faqmenu__list__item>.faqmenu__list__item__heading{display:none}
+.faqmenu__base .bbva-icon{display:none}
+.faqmenu__list__item__heading{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:22px;line-height:32px;color:#121212;padding:24px 0 16px;display:block}
+.faqmenu__list__item__link{display:inline-block;width:100%;padding:8px 0}
+}
+@media(min-width:992px) and (min-width:992px){.faqmenu__list__item__heading{font-size:26px}
+}
+@media(min-width:0) and (max-width:991px) and (min-width:992px){.faqmenu__title{font-size:22px;line-height:32px}
+}

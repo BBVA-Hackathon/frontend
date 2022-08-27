@@ -1,0 +1,61 @@
+:root{--productdescription-background-color:#fff;--productdescription-text-light-color:#626262}
+.dark-theme{--productdescription-background-color:#091016;--productdescription-text-light-color:#e6eaeb}
+.productdescription{position:relative;zoom:1;width:100%;display:block;margin:24px auto}
+.productdescription::after,.productdescription::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.productdescription::after{clear:both}
+.productdescription__image{width:96px;margin:8px auto}
+.productdescription__mod__title .icondescription__base{width:100%}
+.productdescription__mod__title .icondescription__base .icondescription__title{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:24px;line-height:32px;margin:0;padding:8px 0}
+.productdescription__mod__title .icondescription__base .icondescription__title:last-child{padding-bottom:0}
+.productdescription__mod__title .icondescription__base .icondescription__icon{display:block;margin-bottom:8px}
+.productdescription__mod__title .icondescription__base .bbva-svgicon{-webkit-filter:brightness(0) saturate(100%) invert(38%) sepia(39%) saturate(2376%) hue-rotate(181deg) brightness(84%) contrast(85%);filter:brightness(0) saturate(100%) invert(38%) sepia(39%) saturate(2376%) hue-rotate(181deg) brightness(84%) contrast(85%)}
+.productdescription__mod__title .icondescription__base .icondescription__text{color:var(--productdescription-text-light-color,#626262)}
+.productdescription__mod__content{background-color:var(--productdescription-background-color,#fff);padding:24px}
+.productdescription__mod__content--tabs{padding-top:0}
+.productdescription__mod__ulist{display:block;float:left;width:100%;padding-left:16px;padding-right:16px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.productdescription__mod__ulist--1 .productdescription__mod__list{float:left;margin-left:16px;margin-right:16px;width:calc(100% - 32px)}
+.productdescription__mod__content--tabs .productdescription__mod__ulist{margin-top:24px}
+.productdescription__mod__list .productdescription__text{padding-left:0}
+.productdescription__mod__normalhead{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:18px;line-height:24px}
+.productdescription__mod__lighthead{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:18px;line-height:24px}
+.productdescription__mod__bodycopy{margin:16px 0 0;color:var(--productdescription-text-light-color,#626262)}
+.productdescription__mod__bodycopy--notitles{margin-top:0}
+.productdescription__mod__bodycopy.rte ul{list-style:inside;list-style-position:outside !important;margin:0 16px;padding:0}
+.productdescription__mod__bodycopy.rte ul li{margin:0;padding:0 0 16px}
+.productdescription__mod__bodycopy.rte ul li:last-child{padding:0}
+.productdescription__mod__bodycopy.rte ul li::before{content:'';margin:0;padding:0}
+.productdescription__mod__bodycopy.rte p:first-child{margin-top:0}
+.productdescription__mod__bodycopy.rte p:last-child{margin-bottom:0}
+.productdescription__text{display:block;padding-left:16px;word-break:break-word}
+.productdescription__text__title{margin-bottom:16px}
+.productdescription__text .sectiontitle--bullet{margin-bottom:16px}
+.productdescription__cta{position:relative;zoom:1;width:100%;display:block;float:left;margin:8px 0 0;max-width:100%}
+.productdescription__cta::after,.productdescription__cta::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.productdescription__cta::after{clear:both}
+.productdescription__cta__message{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:14px;line-height:24px;margin-bottom:16px}
+.productdescription__cta__button{width:100%;margin-bottom:16px;text-align:left}
+.productdescription__cta__button .bbva-svgicon{-webkit-filter:brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0) hue-rotate(204deg) brightness(104%) contrast(102%);filter:brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0) hue-rotate(204deg) brightness(104%) contrast(102%)}
+.productdescription__cta__version{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;color:var(--productdescription-text-light-color,#626262)}
+.productdescription__cta .table__container{width:100%;margin:0}
+.productdescription__cta .table__link,.productdescription__cta .table__text{margin:0}
+.productdescriptiontext+.productdescriptiontext,.productdescriptiontext+.target{margin-top:24px}
+.tabs__content__item .productdescriptionmodule{width:auto}
+@media(min-width:0) and (max-width:599px){.productdescription{max-width:100%;margin-left:auto;margin-right:auto}
+.productdescription:after{content:" ";display:block;clear:both}
+.productdescription__mod__title{width:100%;float:left;margin-left:0;margin-right:0;padding-bottom:16px}
+.productdescription__mod__title .icondescription__base{margin:0}
+.productdescription__mod__title .icondescription__base .icondescription__icon{display:none}
+.productdescription__mod__content{width:calc(100% - 32px);margin:0 16px;float:left}
+.productdescription__mod__ulist{float:none;padding:0}
+.productdescription__mod__ulist--1 .productdescription__mod__list{float:none;margin:0;padding:0}
+.productdescription__mod__ulist--3 .productdescription__mod__list:last-child{padding-bottom:0}
+.productdescription__mod__list{width:100%;padding:0 0 24px;display:block;float:left}
+.productdescription__mod__bodycopy.rte ul{margin:0 0 0 20px}
+.productdescription__tablecontainer .table:last-child{margin-bottom:0}
+.productdescription__tablecontainer .table__container{width:calc(100% + 48px);position:relative;left:-24px;padding:0}
+.productdescription__tablecontainer .table__text{padding-bottom:0}
+.productdescription__cta__buttons{width:75%}
+}
+@media(min-width:0) and (max-width:991px){.productdescription__text__title{min-height:16px}
+.productdescription__cta .table__container{padding:0}
+}

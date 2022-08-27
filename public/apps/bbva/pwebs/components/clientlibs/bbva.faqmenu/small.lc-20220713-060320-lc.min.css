@@ -1,0 +1,20 @@
+.faqmenu{position:relative;zoom:1;width:100%;display:block}
+.faqmenu::after,.faqmenu::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.faqmenu::after{clear:both}
+@media(min-width:0) and (max-width:991px){.faqmenu__list{width:100%;-webkit-transition:max-height .4s;transition:max-height .4s;min-height:0;max-height:0;overflow:hidden;float:left;clear:both}
+.faqmenu__list .accordion--open>.faqmenu__list{min-height:inherit;max-height:inherit}
+.faqmenu__list .accordion--open .faqmenu__list__item__heading{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;color:#121212}
+.faqmenu__list .accordion--open .faqmenu__list__item__heading .bbva-icon{-webkit-transform:rotate(270deg);transform:rotate(270deg)}
+.faqmenu__list .accordion--open>.accordion__list--child{border-top:1px solid #626262}
+.faqmenu__list__item{width:100%;display:block;float:left;clear:both}
+.faqmenu__list__item>.faqmenu__list__item{border-bottom:0}
+.faqmenu__list__item__heading{border-top:#626262 solid 1px;cursor:pointer}
+.faqmenu__list__item__heading .bbva-icon{color:#1973b8;-webkit-transform:rotate(90deg);transform:rotate(90deg);-webkit-transition:-webkit-transform .4s;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s}
+.faqmenu__list__item__heading .bbva-icon::before{position:relative;top:-1px}
+.faqmenu__list__item__heading,.faqmenu__list__item__link{-webkit-box-sizing:border-box;box-sizing:border-box;padding:12px 16px;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background:#f4f4f4;color:#626262}
+.faqmenu__list__item:first-child .faqmenu__list__item__heading{border:0}
+.faqmenu__content{display:block;float:left;width:100%;clear:both}
+.faqmenu__base{width:100%;max-height:inherit;border-bottom:1px solid #626262}
+.faqmenu__title{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:20px;line-height:24px}
+.faqmenu__title:not(:first-child){margin-top:40px}
+}
