@@ -38,10 +38,11 @@ const Modal = ({ children, close, _id, visible, modal }) => {
   useEffect(() => {
     if (_id !== '') {
       socket.on(`input ${_id}`, (data) => {
+        console.log('Socket', data);
         setCapacity(data);
       });
     }
-  }, [_id]);
+  });
 
   const listByIdFromApi = async (idBank) => {
     if (idBank === '') return;
