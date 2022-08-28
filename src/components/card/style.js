@@ -36,7 +36,17 @@ export const StatusContent = styled.div`
   height: 50px;
   border-radius: 50%;
   color: #fff;
-
+  background-color: ${(props) =>
+    props.percent > 80
+      ? '#00c853'
+      : props.percent > 60
+      ? '#ffeb3b'
+      : props.percent > 40
+      ? '#ffc107'
+      : '#ff5722'};
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const NameBank = styled.p`
