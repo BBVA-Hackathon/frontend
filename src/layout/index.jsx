@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Outlet } from 'react-router-dom';
 import { Nav } from './style';
 
@@ -9,6 +10,10 @@ const Layout = () => {
       <Outlet />
     </div>
   );
+=======
+const Layout = () => {
+  return <div>index</div>;
+>>>>>>> main
 };
 
 export default Layout;

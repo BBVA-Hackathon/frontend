@@ -1,4 +1,5 @@
 import { useState } from 'react';
+<<<<<<< HEAD
 import {
   Label,
   SelectContainer,
@@ -11,6 +12,12 @@ import angleDown from '../../assets/images/angleDown.svg';
 
 const Select = ({ label }) => {
   const [selected, setSelected] = useState('Lima');
+=======
+import { SelectContainer } from './style';
+
+const Select = () => {
+  const [selected, setSelected] = useState(false);
+>>>>>>> main
   const [options, setOptions] = useState([
     'Option 1',
     'Option 2',
@@ -27,6 +34,7 @@ const Select = ({ label }) => {
 
   return (
     <SelectContainer>
+<<<<<<< HEAD
       <SelectHeader onClick={() => setShowList(!showList)}>
         <div>
           <Label>{label}</Label>
@@ -43,6 +51,15 @@ const Select = ({ label }) => {
             </SelectOption>
           ))}
         </SelectOptions>
+=======
+      <h1 onClick={() => setShowList(!showList)}>Select</h1>
+      {showList && (
+        <div>
+          {options.map((option, index) => (
+            <div key={index}>{option}</div>
+          ))}
+        </div>
+>>>>>>> main
       )}
     </SelectContainer>
   );
