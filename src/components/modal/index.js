@@ -35,15 +35,18 @@ const Modal = ({ children, close, _id, visible, modal }) => {
     capacityAtmQueue: 0,
   });
 
+  console.log('capacity', capacity);
+
   useEffect(() => {
     console.log('useEffl', _id);
     if (_id !== '') {
+      console.log('init if');
       socket.on(`input ${_id}`, (data) => {
         console.log('Socket', data);
         setCapacity(data);
       });
     }
-  });
+  }, ['']);
 
   const listByIdFromApi = async (idBank) => {
     if (idBank === '') return;
