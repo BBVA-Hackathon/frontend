@@ -20,6 +20,7 @@ import ReactDOM from 'react-dom';
 const Modal = ({ children, close, _id, visible, modal }) => {
   const [name, setName] = useState('');
   const [idBank, setIdBank] = useState('');
+  const [bank, setBank] = useState({});
 
   const [capacity, setCapacity] = useState({
     capacityNormalWindow: 0,
@@ -46,6 +47,18 @@ const Modal = ({ children, close, _id, visible, modal }) => {
     }
   });
 
+  useEffect(() => {
+    setIdBank(idBank);
+    if (idBank !== '') {
+      listById(idBank)
+        .then((response) => {
+          setBank(response.data);
+          console.log('list by id', response.data);
+        })
+        .catch(() => {});
+    }
+  }, [idBank]);
+
   const listByIdFromApi = async (idBank) => {
     if (idBank === '') return;
     listById(idBank).then(
@@ -59,6 +72,8 @@ const Modal = ({ children, close, _id, visible, modal }) => {
       }
     );
   };
+
+  console.log('bank', bank);
 
   const handleChange = (event) => {
     const idBank = event.target.value;
@@ -91,7 +106,9 @@ const Modal = ({ children, close, _id, visible, modal }) => {
 
           <ModalBody>
             <ContainerDetails>
-              <CurrentCapacity>AFORO ACTUAL: 15/20</CurrentCapacity>
+              <CurrentCapacity>
+                AFORO ACTUAL: 15/{bank.capacity}
+              </CurrentCapacity>
             </ContainerDetails>
 
             <ContainerDetails>
