@@ -6,6 +6,10 @@ export const SelectContainer = styled.div`
   position: relative;
   z-index: 1;
   margin-right: 20px;
+  @media (max-width: 800px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 `;
 
 export const Label = styled.p`

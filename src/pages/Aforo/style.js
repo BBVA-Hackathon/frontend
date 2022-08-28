@@ -15,16 +15,26 @@ export const Title = styled.h1`
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    display: block;
+  }
 `;
 
 export const HeaderFilter = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    display: block;
+  }
 `;
 
 export const HeaderMethodShow = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    margin-top: 50px;
+    justify-content: center;
+  }
 `;
 
 export const OptionShow = styled.div`
@@ -35,5 +45,9 @@ export const OptionShow = styled.div`
   cursor: pointer;
   p {
     margin-left: 10px;
+
+    @media (max-width: 800px) {
+      font-size: 20px;
+    }
   }
 `;

@@ -14,6 +14,17 @@ export const CardContainer = styled.div`
     position: absolute;
     background-color: rgba(0, 0, 0, 0.55);
   }
+  @media (max-width: 780px) {
+    width: 380px;
+    height: 300px;
+    ::after {
+      content: '';
+      width: 380px;
+      height: 300px;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.55);
+    }
+  }
 `;
 
 export const StatusContent = styled.div`
