@@ -38,12 +38,11 @@ export const StatusContent = styled.div`
   color: #fff;
   background-color: ${(props) =>
     props.percent > 0.2
-      ? 
-      '#ffeb3b'
+      ? '#D42333'
       : props.percent > 0.4
       ? '#00c853'
       : props.percent > 0.8
-      ? '#ffc107'
+      ? '#white'
       : '#ff5722'};
   display: flex;
   justify-content: center;
