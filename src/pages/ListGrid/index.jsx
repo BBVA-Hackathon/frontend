@@ -9,6 +9,7 @@ const ListGrid = () => {
   const [bankSelect, setBankSelect] = useState('');
   const [modal, setModal] = useState(false);
 
+  console.log('bankSelect', bankSelect);
 
   useEffect(() => {
     listAll().then((response) => {
@@ -38,7 +39,7 @@ const ListGrid = () => {
           />
         ))}
       </GridContainer>
-      <Modal visible={modal} close={() => closeModal()} _id={bankSelect}/>
+      <Modal visible={modal} close={() => closeModal()} _id={bankSelect} />
     </>
   );
 };

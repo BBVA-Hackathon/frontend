@@ -36,6 +36,7 @@ const Modal = ({ children, close, _id, visible, modal }) => {
   });
 
   useEffect(() => {
+    console.log('useEffl', _id);
     if (_id !== '') {
       socket.on(`input ${_id}`, (data) => {
         console.log('Socket', data);
