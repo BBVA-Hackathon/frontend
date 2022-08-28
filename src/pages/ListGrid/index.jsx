@@ -6,11 +6,10 @@ import Modal from '../../components/modal';
 
 const ListGrid = () => {
   const [banks, setBanks] = useState([]);
-  const [bankSelect, setBankSelect] = useState();
+  const [bankSelect, setBankSelect] = useState('');
   const [modal, setModal] = useState(false);
 
-  console.log('Banco seleecionado', bankSelect);
-  
+
   useEffect(() => {
     listAll().then((response) => {
       console.log(response.data);
@@ -34,12 +33,12 @@ const ListGrid = () => {
             key={_id}
             name={name}
             image={image}
-            setbank={setBankSelect}
+            setBankSelect={() => setBankSelect(_id)}
             onShow={() => showModal()}
           />
         ))}
       </GridContainer>
-      <Modal visible={modal} close={() => closeModal()} />
+      <Modal visible={modal} close={() => closeModal()} _id={bankSelect}/>
     </>
   );
 };

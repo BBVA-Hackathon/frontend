@@ -1,11 +1,10 @@
 import { CardContainer, NameBank, StatusContent } from './style';
 
-const Card = ({ name, image, onShow,setBank }) => {
-  
+const Card = ({ name, image, onShow, setBankSelect }) => {
   const handleClick = () => {
-    setBank(name);
+    setBankSelect();
     onShow();
-  }
+  };
 
   return (
     <CardContainer imgUrl={image} onClick={handleClick}>

@@ -17,9 +17,11 @@ import { listById } from '../../services/BankService';
 import socket from '../../utils/socket.js';
 import ReactDOM from 'react-dom';
 
-const Modal = ({ children, close, title, visible, modal }) => {
+const Modal = ({ children, close, _id, visible, modal }) => {
   const [name, setName] = useState('');
   const [idBank, setIdBank] = useState('');
+
+  console.log('Modal', _id);
 
   const [capacity, setCapacity] = useState({
     capacityNormalWindow: 0,
@@ -34,12 +36,12 @@ const Modal = ({ children, close, title, visible, modal }) => {
   });
 
   useEffect(() => {
-    if (idBank !== '') {
-      socket.on(`input ${idBank}`, (data) => {
+    if (_id !== '') {
+      socket.on(`input ${_id}`, (data) => {
         setCapacity(data);
       });
     }
-  });
+  }, [_id]);
 
   const listByIdFromApi = async (idBank) => {
     if (idBank === '') return;
@@ -95,38 +97,42 @@ const Modal = ({ children, close, title, visible, modal }) => {
             <ContainerDetailInternal>
               <div>
                 <div>
-                  <p>Plataforma</p>
+                  <p>Plataforma: {capacity.capacityNormalPlatform}</p>
                 </div>
                 <div>
-                  <p>Ventanilla</p>
+                  <p>Ventanilla: {capacity.capacityNormalWindow}</p>
                 </div>
               </div>
               <div>
                 <div>
-                  <p>Plataforma preferencial</p>
+                  <p>
+                    Plataforma Preferencial: {capacity.capacityPrefPlatform}
+                  </p>
                 </div>
                 <div>
-                  <p>Ventanilla preferencial</p>
+                  <p>Ventanilla Preferencial: {capacity.capacityPrefWindow}</p>
                 </div>
               </div>
             </ContainerDetailInternal>
             <ContainerDetails>
-              <CashierDetail>Cajero</CashierDetail>
+              <CashierDetail>
+                Esperando Cajero: {capacity.capacityAtm}{' '}
+              </CashierDetail>
             </ContainerDetails>
             <ContainerDetails>
               <p>Exterior</p>
             </ContainerDetails>
             <ContainerDetailExterno>
               <div>
-                <p>plataforma/ventanilla</p>
+                <p>Cola de cajero: {capacity.capacityAtmQueue}</p>
               </div>
               <div>
-                <p>cajero</p>
+                <p>Cola del banco: {capacity.capacityTranQueue}</p>
               </div>
             </ContainerDetailExterno>
           </ModalBody>
           <ModalFooter>
-            <p>Actualizacion</p>
+            <p>*Estos datos se actualizarón hace 1 segundo</p>
           </ModalFooter>
         </ModalContainer>
       </Shadow>
