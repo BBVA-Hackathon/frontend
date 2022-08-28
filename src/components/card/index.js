@@ -53,7 +53,7 @@ const Card = ({ name, image, onShow, setBankSelect, _id }) => {
 
   return (
     <CardContainer imgUrl={image} onClick={handleClick}>
-      <StatusContent percent={capacity.capacityInt}>
+      <StatusContent percent={capacity.capacityInt / bank.capacity}>
         {capacity.capacityInt}/ {bank.capacity}
       </StatusContent>
       <NameBank>{name}</NameBank>

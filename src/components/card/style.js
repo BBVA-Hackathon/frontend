@@ -37,11 +37,11 @@ export const StatusContent = styled.div`
   border-radius: 50%;
   color: #fff;
   background-color: ${(props) =>
-    props.percent > 80
+    props.percent > 0.2
       ? '#00c853'
-      : props.percent > 60
+      : props.percent > 0.4
       ? '#ffeb3b'
-      : props.percent > 40
+      : props.percent > 0.8
       ? '#ffc107'
       : '#ff5722'};
   display: flex;
