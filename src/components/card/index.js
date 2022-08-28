@@ -1,6 +1,7 @@
 import { CardContainer, NameBank, StatusContent } from './style';
 import { useEffect, useState } from 'react';
 import socket from '../../utils/socket.js';
+import { listById } from '../../services/BankService';
 
 const Card = ({ name, image, onShow, setBankSelect, _id }) => {
   const [idBank, setIdBank] = useState('');
@@ -38,10 +39,22 @@ const Card = ({ name, image, onShow, setBankSelect, _id }) => {
     }
   });
 
+  useEffect(() => {
+    setIdBank(idBank);
+    if (idBank !== '') {
+      listById(idBank)
+        .then((response) => {
+          setBank(response.data);
+          console.log('list by id', response.data);
+        })
+        .catch(() => {});
+    }
+  }, [idBank]);
+
   return (
     <CardContainer imgUrl={image} onClick={handleClick}>
       <StatusContent percent={capacity.capacityInt}>
-        {capacity.capacityInt}
+        {capacity.capacityInt}/ {bank.capacity}
       </StatusContent>
       <NameBank>{name}</NameBank>
     </CardContainer>

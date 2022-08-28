@@ -22,12 +22,15 @@ const Aforo = () => {
     navigate(`/${path}`);
   };
 
+
+  
   return (
     <Main>
       <Title>Puntos de atención</Title>
       <Header>
         <HeaderFilter>
-          <Select label={'Ciudad'} options={city} />
+          <Select label={'Departamento'} options={city} />
+          <Select label={'Provincia'} options={city} />
           <Select label={'Distrito'} options={district} />
         </HeaderFilter>
         <HeaderMethodShow>
