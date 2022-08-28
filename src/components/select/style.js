@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const SelectContainer = styled.div`
   width: 250px;
-<<<<<<< HEAD
   background-color: #f4f4f4;
   position: relative;
   z-index: 1;
@@ -35,9 +34,4 @@ export const SelectOptions = styled.div`
 
 export const SelectOption = styled.div`
   padding: 8px 10px;
-=======
-  height: 20px;
-  padding: 10px;
-  background-color: #f4f4f4;
->>>>>>> main
 `;
