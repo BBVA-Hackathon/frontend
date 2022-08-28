@@ -9,7 +9,6 @@ const ListGrid = () => {
   const [bankSelect, setBankSelect] = useState('');
   const [modal, setModal] = useState(false);
 
-  console.log('bankSelect', bankSelect);
 
   useEffect(() => {
     listAll().then((response) => {
@@ -32,6 +31,7 @@ const ListGrid = () => {
         {banks?.map(({ _id, name, image }) => (
           <Card
             key={_id}
+            _id={_id}
             name={name}
             image={image}
             setBankSelect={() => setBankSelect(_id)}

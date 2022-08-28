@@ -34,6 +34,8 @@ const Modal = ({ children, close, _id, visible, modal }) => {
     capacityAtmQueue: 0,
   });
 
+
+
   useEffect(() => {
     setIdBank(_id);
     console.log('useEffl', idBank);
@@ -134,7 +136,7 @@ const Modal = ({ children, close, _id, visible, modal }) => {
             </ContainerDetailInternal>
             <ContainerDetails>
               <CashierDetail>
-                Esperando Cajero: {capacity.capacityAtm}{' '}
+                Personas en cajero: {capacity.capacityAtm}
               </CashierDetail>
             </ContainerDetails>
             <ContainerDetails>
