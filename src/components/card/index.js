@@ -19,8 +19,6 @@ const Card = ({ name, image, onShow, setBankSelect, _id }) => {
     capacityAtmQueue: 0,
   });
 
-  console.log('card', capacity);
-
   const handleClick = () => {
     setBankSelect();
     onShow();
@@ -40,16 +38,18 @@ const Card = ({ name, image, onShow, setBankSelect, _id }) => {
   });
 
   useEffect(() => {
-    setIdBank(idBank);
-    if (idBank !== '') {
-      listById(idBank)
+    setIdBank(_id);
+    if (_id !== '') {
+      listById(_id)
         .then((response) => {
           setBank(response.data);
           console.log('list by id', response.data);
         })
         .catch(() => {});
     }
-  }, [idBank]);
+  }, [_id]);
+
+  console.log('card', bank);
 
   return (
     <CardContainer imgUrl={image} onClick={handleClick}>
