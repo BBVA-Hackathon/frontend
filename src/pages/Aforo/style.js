@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-<<<<<<< HEAD
 export const Main = styled.div`
   padding: 40px 80px;
 `;
@@ -48,11 +47,4 @@ export const OptionShow = styled.div`
   p {
     margin-left: 10px;
   }
-=======
-export const CardContainer = styled.div`
-  width: 250px;
-  height: 200px;
-  padding: 10px;
-  background-color: red;
->>>>>>> main
 `;
