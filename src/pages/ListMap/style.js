@@ -49,3 +49,10 @@ export const ScheduleBank = styled.p`
   margin-left: 4px;
   color: #444444;
 `;
+
+export const Map = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+`;

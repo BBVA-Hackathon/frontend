@@ -10,7 +10,9 @@ import {
   DetailBank,
   StatusBank,
   ScheduleBank,
+  Map,
 } from './style';
+import map from '../../assets/images/Mapa.png';
 
 const ListMap = () => {
   const [banks, setBanks] = useState([]);
@@ -28,7 +30,9 @@ const ListMap = () => {
           <ItemListMap key={_id} name={name} address={address} />
         ))}
       </ListMapContainer>
-      <div> map</div>
+      <Map>
+        <img src={map} alt='M' />
+      </Map>
     </MapContainer>
   );
 };

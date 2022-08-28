@@ -29,7 +29,8 @@ export const SelectOptions = styled.div`
   z-index: 10;
   position: absolute;
   width: 100%;
-  background-color: red;
+  background-color: #999;
+  color: #fff;
 `;
 
 export const SelectOption = styled.div`

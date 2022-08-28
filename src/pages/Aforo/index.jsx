@@ -11,9 +11,12 @@ import { Outlet } from 'react-router-dom';
 import gridOn from '../../assets/images/gridOn.svg';
 import mapOff from '../../assets/images/mapOff.svg';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const Aforo = () => {
   const navigate = useNavigate();
+  const [city, setCity] = useState(['Lima']);
+  const [district, setDistrict] = useState(['San Isidro']);
 
   const handleClick = (path) => {
     navigate(`/${path}`);
@@ -24,8 +27,8 @@ const Aforo = () => {
       <Title>Puntos de atención</Title>
       <Header>
         <HeaderFilter>
-          <Select label={'Ciudad'} />
-          <Select label={'Distrito'} />
+          <Select label={'Ciudad'} options={city} />
+          <Select label={'Distrito'} options={district} />
         </HeaderFilter>
         <HeaderMethodShow>
           <OptionShow onClick={() => handleClick('list')}>

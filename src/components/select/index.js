@@ -9,20 +9,9 @@ import {
 import angleUp from '../../assets/images/angleUp.svg';
 import angleDown from '../../assets/images/angleDown.svg';
 
-const Select = ({ label }) => {
-  const [selected, setSelected] = useState('Lima');
-  const [options, setOptions] = useState([
-    'Option 1',
-    'Option 2',
-    'Option 3',
-    'Option 4',
-    'Option 5',
-    'Option 6',
-    'Option 7',
-    'Option 8',
-    'Option 9',
-    'Option 10',
-  ]);
+const Select = ({ label, options }) => {
+  const [selected, setSelected] = useState('Seleccione');
+
   const [showList, setShowList] = useState(false);
 
   return (
@@ -38,7 +27,13 @@ const Select = ({ label }) => {
       {showList && (
         <SelectOptions>
           {options.map((option, index) => (
-            <SelectOption key={index}>
+            <SelectOption
+              key={index}
+              onClick={() => {
+                setSelected(option);
+                setShowList(!showList);
+              }}
+            >
               <p>{option}</p>
             </SelectOption>
           ))}
