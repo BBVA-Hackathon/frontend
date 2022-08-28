@@ -21,8 +21,6 @@ const Modal = ({ children, close, _id, visible, modal }) => {
   const [name, setName] = useState('');
   const [idBank, setIdBank] = useState('');
 
-  console.log('Modal', _id);
-
   const [capacity, setCapacity] = useState({
     capacityNormalWindow: 0,
     capacityNormalPlatform: 0,
@@ -35,18 +33,18 @@ const Modal = ({ children, close, _id, visible, modal }) => {
     capacityAtmQueue: 0,
   });
 
-  console.log('capacity', capacity);
-
   useEffect(() => {
-    console.log('useEffl', _id);
-    if (_id !== '') {
+    setIdBank(_id);
+    console.log('useEffl', idBank);
+    if (idBank !== '') {
       console.log('init if');
-      socket.on(`input ${_id}`, (data) => {
-        console.log('Socket', data);
+      socket.on(`input ${idBank}`, (data) => {
+        console.log('socket');
+        console.log(data);
         setCapacity(data);
       });
     }
-  }, ['']);
+  });
 
   const listByIdFromApi = async (idBank) => {
     if (idBank === '') return;
