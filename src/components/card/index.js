@@ -18,7 +18,7 @@ const Card = ({ name, image, onShow, setBankSelect, _id }) => {
     capacityAtmQueue: 0,
   });
 
-  console.log('modal', capacity);
+  console.log('card', capacity);
 
   const handleClick = () => {
     setBankSelect();
@@ -27,7 +27,7 @@ const Card = ({ name, image, onShow, setBankSelect, _id }) => {
 
   useEffect(() => {
     setIdBank(_id);
-    console.log('useEffl', idBank);
+    console.log('carSocket', idBank);
     if (idBank !== '') {
       console.log('init if');
       socket.on(`input ${idBank}`, (data) => {
@@ -40,7 +40,9 @@ const Card = ({ name, image, onShow, setBankSelect, _id }) => {
 
   return (
     <CardContainer imgUrl={image} onClick={handleClick}>
-      <StatusContent></StatusContent>
+      <StatusContent percent={capacity.capacityInt}>
+        capacity.capacityInt
+      </StatusContent>
       <NameBank>{name}</NameBank>
     </CardContainer>
   );

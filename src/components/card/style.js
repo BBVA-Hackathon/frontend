@@ -34,8 +34,8 @@ export const StatusContent = styled.div`
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: red;
   border-radius: 50%;
+
 `;
 
 export const NameBank = styled.p`
