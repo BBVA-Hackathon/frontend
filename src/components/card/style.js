@@ -42,8 +42,8 @@ export const StatusContent = styled.div`
       : props.percent > 0.4
       ? '#00c853'
       : props.percent > 0.8
-      ? 'yellow'
-      : 'yellow'};
+      ? '#2FB00F'
+      : '#2FB00F'};
   display: flex;
   justify-content: center;
   align-items: center;
