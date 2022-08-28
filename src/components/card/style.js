@@ -38,9 +38,10 @@ export const StatusContent = styled.div`
   color: #fff;
   background-color: ${(props) =>
     props.percent > 0.2
-      ? '#00c853'
+      ? 
+      '#ffeb3b'
       : props.percent > 0.4
-      ? '#ffeb3b'
+      ? '#00c853'
       : props.percent > 0.8
       ? '#ffc107'
       : '#ff5722'};
