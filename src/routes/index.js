@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Redirect } from 'react-router-dom';
 import Aforo from '../pages/Aforo';
 import Layout from '../layout';
 import ListGrid from '../pages/ListGrid';

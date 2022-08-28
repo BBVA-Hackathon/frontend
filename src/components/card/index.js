@@ -1,8 +1,18 @@
-import { CardContainer } from './style';
-import oficina from '../../assets/images/offices/oficina1.png';
+import { CardContainer, NameBank, StatusContent } from './style';
 
-const Card = () => {
-  return <CardContainer imgUrl={oficina}></CardContainer>;
+const Card = ({ name, image, onShow,setBank }) => {
+  
+  const handleClick = () => {
+    setBank(name);
+    onShow();
+  }
+
+  return (
+    <CardContainer imgUrl={image} onClick={handleClick}>
+      <StatusContent></StatusContent>
+      <NameBank>{name}</NameBank>
+    </CardContainer>
+  );
 };
 
 export default Card;

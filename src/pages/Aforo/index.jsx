@@ -11,7 +11,6 @@ import { Outlet } from 'react-router-dom';
 import gridOn from '../../assets/images/gridOn.svg';
 import mapOff from '../../assets/images/mapOff.svg';
 import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 const Aforo = () => {
   const navigate = useNavigate();

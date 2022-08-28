@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react';
+import { listAll } from '../../services/BankService';
+
 import {
   MapContainer,
   ListMapContainer,
@@ -10,24 +13,31 @@ import {
 } from './style';
 
 const ListMap = () => {
+  const [banks, setBanks] = useState([]);
+  useEffect(() => {
+    listAll().then((response) => {
+      console.log(response.data);
+      setBanks(response.data);
+    });
+  }, []);
+
   return (
     <MapContainer>
       <ListMapContainer>
-        <ItemListMap />
-        <ItemListMap />
+        {banks?.map(({ _id, name, address }) => (
+          <ItemListMap key={_id} name={name} address={address} />
+        ))}
       </ListMapContainer>
       <div> map</div>
     </MapContainer>
   );
 };
 
-const ItemListMap = () => {
+const ItemListMap = ({ name, address }) => {
   return (
     <ItemListStyle>
-      <NameBank>BBVA San Isidro</NameBank>
-      <DirectionBank>
-        Av. República de Panamá 3055, San Isidro 15036
-      </DirectionBank>
+      <NameBank>{name?.split('_').join(' ')}</NameBank>
+      <DirectionBank>{address}</DirectionBank>
       <DetailBank>
         <StatusBank hour={2}>Cerrado</StatusBank>
         <ScheduleBank> Abre a las 09:00 del lunes a viernes</ScheduleBank>

@@ -6,11 +6,32 @@ export const CardContainer = styled.div`
   background: ${(props) => `url(${props.imgUrl})`};
   background-size: cover;
   background-position: center;
+  position: relative;
   ::after {
     content: '';
     width: 320px;
     height: 270px;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.55);
   }
+`;
+
+export const StatusContent = styled.div`
+  z-index: 999;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+`;
+
+export const NameBank = styled.p`
+  z-index: 999;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 70%;
+  text-align: center;
 `;

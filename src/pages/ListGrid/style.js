@@ -11,3 +11,4 @@ export const GridContainer = styled.div`
   grid-gap: 40px;
   box-sizing: border-box;
 `;
+
