@@ -99,15 +99,13 @@ const Modal = ({ children, close, _id, visible, modal }) => {
             <p onClick={close}>x</p>
           </Close>
           <ModalHeader>
-            <DirectionBank>
-              Av. República de Panamá 3055, San Isidro 15036 Peru
-            </DirectionBank>
+            <DirectionBank>{bank.address} </DirectionBank>
           </ModalHeader>
 
           <ModalBody>
             <ContainerDetails>
               <CurrentCapacity>
-                AFORO ACTUAL: 15/{bank.capacity}
+                AFORO ACTUAL: {capacity.capacityInt}/{bank.capacity}
               </CurrentCapacity>
             </ContainerDetails>
 
